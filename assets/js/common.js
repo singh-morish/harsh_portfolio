@@ -3,6 +3,10 @@ const navMenu = document.getElementById('nav-menu'),
 navToggle = document.getElementById('nav-toggle'),
 navClose = document.getElementById('nav-close')
 
+
+const navLink = document.querySelectorAll('.nav__link');
+
+
 /*===== Menu Show =====*/
 
 /* Validate if constant exists */
@@ -103,3 +107,16 @@ const sendEmail = (e) => {
 };
 
 contactForm.addEventListener("submit", sendEmail);
+
+
+const alternateStyles = document.querySelectorAll('.alternate-style');
+
+function setActiveStyle(color){
+  alternateStyles.forEach((style) => {
+    if(color === style.getAttribute('title')){
+      style.removeAttribute('disabled')
+    }else{
+      style.setAttribute('disabled', 'true')
+    }
+  })
+}

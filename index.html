@@ -19,6 +19,7 @@
     <!--=============== Css ===============-->
     <link rel="stylesheet" href="assets/css/style.css" />
     <link rel="stylesheet" href="assets/css/skins/color-1.css" />
+    <link rel="stylesheet" href="assets/css/skins/color-1.css" />
 
     <!--=============== Skin Colors ===============-->
     <link
@@ -33,6 +34,13 @@
       href="assets/css/skins/color-2.css"
       class="alternate-style"
       title="color-2"
+      disabled
+    />
+    <link
+      rel="stylesheet"
+      href="assets/css/skins/color-.css"
+      class="alternate-style"
+      title="color-3"
       disabled
     />
 
@@ -750,8 +758,9 @@
       </div>
 
       <div class="colors">
-        <span class="color-1"></span>
-        <span class="color-2"></span>
+        <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+        <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+        <span class="color-3" onclick="setActiveStyle('color-3')"><i class="ri-moon-line"></i></span>
       </div>
     </div>
 

@@ -894,11 +894,12 @@ figcaption {
   box-shadow: 5px 1px 10px rgba(0, 0, 0, 0.4);
   background-color: var(--bg-color);
   z-index: 101;
-  /* transform: translateX(100%); */
+  transform: translateX(100%);
+  transition: 0.3s;
 }
 
 .open{
-  transform: translateX(0%);
+  transform: translateX(0);
 }
 
 .style__switcher-toggler{
@@ -929,12 +930,13 @@ figcaption {
 }
 
 .color-1{
-  background-color: #4a4a4a;
+  background-color:rgb(153, 51, 102);
 }
 
 .color-2{
   background-color: #6d56c1;
 }
+
 
 
 
